@@ -1,0 +1,95 @@
+:root {
+  --bark-red: #a51e2b;
+  --lime: var(--bark-red);
+  --green: #8ca900;
+}
+
+.brand {
+  gap: 0;
+  color: var(--bark-red);
+}
+
+.brand-wordmark {
+  display: block;
+  font-family: 'Barlow Condensed', Impact, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -.065em;
+  line-height: .9;
+  transform: skew(-5deg);
+}
+
+.brand-image {
+  display: block;
+  width: auto;
+  height: 36px;
+  max-width: 190px;
+  object-fit: contain;
+}
+
+.hero-image img {
+  filter: none;
+}
+
+.footer .brand-wordmark {
+  color: #c43a45;
+}
+
+.promo-bar {
+  background: var(--bark-red);
+}
+
+.promo-bar > span:first-child {
+  color: #fff;
+}
+
+.btn-primary,
+.btn-lime {
+  background: var(--bark-red);
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled),
+.btn-lime:hover:not(:disabled) {
+  background: #861722;
+}
+
+.sale-tag {
+  background: var(--bark-red);
+  color: #fff;
+}
+
+.hero-index span:first-child,
+.hero-product-card > span,
+.hero-product-card button,
+.bundle-stamp {
+  color: #ef5863;
+}
+
+.bundle-stamp {
+  border-color: #ef586388;
+}
+
+.hero-product-card button:hover,
+.footer-bottom button:hover {
+  color: #f17880;
+}
+
+.hero-product-card .btn-primary {
+  color: #fff;
+}
+
+@media (max-width: 760px) {
+  .brand-wordmark {
+    font-size: 29px;
+  }
+
+  .brand-image {
+    height: 32px;
+    max-width: 155px;
+  }
+
+  .orb-benefit {
+    top: calc(50% + 72px);
+  }
+}
